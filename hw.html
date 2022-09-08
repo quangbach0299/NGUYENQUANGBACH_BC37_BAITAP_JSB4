@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-group">
+        <h4>
+          Bài 1: Nhập vào số tiền lương 1h và số giờ làm và in ra tổng lương
+          bằng số giờ nhân tiền lương
+        </h4>
+        <div class="form-group">
+          <p>Tiền lương 1h</p>
+          <input id="tienLuong1h" class="form-control w-25" />
+        </div>
+        <br />
+        <div class="form-group">
+          <p>Số giờ làm</p>
+          <input type="text" id="soGioLam" class="form-control w-25" />
+        </div>
+        <br />
+        <button onclick="calcMoney() " id="btnTinhTien" class="btn btn-success">
+          Tính Tiền
+        </button>
+        <div class="mt-2 alert alert-success">
+          Kết quả :
+          <span id="tongLuong"> </span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <h4>Bài 2: Tính giá trị trung bình</h4>
+        <div class="form-group">
+          <p>Nhập vào 5 số thực :</p>
+          <input type="text" id="a" class="form-control w-25" />
+          <br />
+          <input type="text" id="b" class="form-control w-25" />
+          <br />
+          <input type="text" id="c" class="form-control w-25" />
+          <br />
+          <input type="text" id="d" class="form-control w-25" />
+          <br />
+          <input type="text" id="e" class="form-control w-25" />
+        </div>
+        <br />
+        <button onclick="medium() " id="btnTinhTien" class="btn btn-success">
+          Tính
+        </button>
+        <div class="mt-2 alert alert-success">
+          Kết quả :
+          <span id="giaTriTrungBinh"> </span>
+        </div>
+      </div>
+      <div class="form-group">
+        <h4>Bài 3: Quy đổi tiền đô</h4>
+        <div class="form-group">
+          <p>Nhập vào số đô cần quy đổi</p>
+          <input type="text" id="money" class="form-control w-25" />
+        </div>
+        <br />
+        <div class="form-group">
+          <p>Nhập vào tỷ giá</p>
+          <input type="text" id="exchangRate" class="form-control w-25" />
+        </div>
+        <br />
+        <button onclick="changMoney()" id="btnTinhTien" class="btn btn-success">
+          Tính
+        </button>
+        <div class="mt-2 alert alert-success">
+          Kết quả :
+          <span id="thanhTien"> </span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <h4>Bài 4: Tính diện tích và chu vi hình chữ nhật</h4>
+        <div class="form-group">
+          <p>Nhập vào chiều dài</p>
+          <input type="text" id="long" class="form-control w-25" />
+        </div>
+        <br />
+        <div class="form-group">
+          <p>Nhập vào chiều rộng</p>
+          <input type="text" id="wide" class="form-control w-25" />
+        </div>
+        <br />
+        <button onclick="rectangle()" id="count" class="btn btn-success">
+          Tính
+        </button>
+        <div class="mt-2 alert alert-success">
+          Kết quả :
+          <input type="text" id="perimeter" placeholder="Chu Vi" />
+          <input type="text" id="area" placeholder="Diện tích" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <h4>Bài 5: Nhập vào số có hai chữ số và tính tổng hai số</h4>
+        <div class="form-group">
+          <p>Nhập vào số có 2 chữ số</p>
+          <input type="text" id="number" class="form-control w-25" />
+        </div>
+        <br />
+        <button onclick="analysis()" id="analysis" class="btn btn-success">
+          Phân tích
+        </button>
+        <br />
+        <div class="mt-2 alert alert-success">
+          Kết quả :
+          <span id="final"> </span>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./hw.js"></script>
+  </body>
+</html>
